@@ -56,8 +56,6 @@ export default function CartIndex({
         if (newQty < 1) return;
         setProcessingId(cartId);
 
-        // PERUBAHAN: updateCart({ cart: cartId })
-        // Asumsi generator route menerima parameter object { nama_parameter: value }
         router.patch(
             updateCart({ cart: cartId }),
             {
@@ -73,8 +71,6 @@ export default function CartIndex({
     // Remove Item Logic
     const removeItem = (cartId: number) => {
         if (!confirm('Are you sure you want to remove this item?')) return;
-
-        // PERUBAHAN: removeCart({ cart: cartId })
         router.delete(removeCart({ cart: cartId }), {
             preserveScroll: true,
         });
@@ -84,7 +80,6 @@ export default function CartIndex({
     const handleCheckout = () => {
         if (!confirm('Process checkout? This will send a daily report later.'))
             return;
-        // PERUBAHAN: checkoutRoute()
         router.post(checkoutRoute());
     };
 
