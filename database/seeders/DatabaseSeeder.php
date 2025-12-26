@@ -29,19 +29,19 @@ class DatabaseSeeder extends Seeder
         Product::create([
             'name' => 'Iphone 17 Pro',
             'price' => 999.99,
-            'stock_quantity' => 50,
+            'stock_quantity' => 5,
         ]);
 
         Product::create([
             'name' => 'Samsung Galaxy S30',
             'price' => 899.99,
-            'stock_quantity' => 75,
+            'stock_quantity' => 10,
         ]);
 
         Product::create([
             'name' => 'Google Pixel 12',
             'price' => 799.99,
-            'stock_quantity' => 100,
+            'stock_quantity' => 20,
         ]);
     }
 }
