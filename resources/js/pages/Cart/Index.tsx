@@ -36,7 +36,7 @@ interface GlobalProps {
 const breadcrumbs: BreadcrumbItem[] = [
     {
         title: 'Dashboard',
-        href: dashboardRoute(),
+        href: dashboardRoute().url,
     },
     {
         title: 'Shopping Cart',
@@ -261,7 +261,7 @@ export default function CartIndex({
                             Looks like you haven't added anything yet.
                         </p>
                         <a
-                            href={dashboardRoute()} // Link kembali ke dashboard
+                            href={dashboardRoute().url}
                             className="mt-4 rounded-lg bg-black px-6 py-2 text-sm font-semibold text-white hover:bg-gray-800 dark:bg-white dark:text-black"
                         >
                             Start Shopping
