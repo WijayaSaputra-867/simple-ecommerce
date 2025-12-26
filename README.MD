@@ -30,7 +30,7 @@ A **robust Full Stack E-commerce MVP** built as a technical assessment. This pro
 
 ## 🛠️ Tech Stack
 
-- **Backend**: Laravel 10, MySQL
+- **Backend**: Laravel, MySQL
 - **Frontend**: React.js, Inertia.js (SPA Monolith)
 - **Styling**: Tailwind CSS
 - **Mail & Testing**: Mailpit (SMTP Mocking)
